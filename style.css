@@ -1,0 +1,359 @@
+:root {
+    --Dark-Blue-1: hsl(217, 28%, 15%);
+    --Dark-Blue-2: hsl(218, 28%, 13%);
+    --Dark-Blue-4: hsl(216, 53%, 9%);
+    --Dark-Blue-3: hsl(219, 30%, 18%);
+
+    --Cyan: hsl(176, 68%, 64%);
+    --Blue: hsl(198, 60%, 50%);
+    --Light-Red: hsl(0, 100%, 63%);
+
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: 'Open Sans', sans-serif; */
+    /* font-family: 'Raleway', sans-serif; */
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--Dark-Blue-3)
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.navbar{
+    width: 100%;
+    padding: 4rem;
+    background:none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.items_nav{
+    display: flex;
+    gap: 1rem;
+}
+
+.items_nav .item{
+    text-decoration: none;
+    color: var(--White);
+}
+
+/*================= intro page ================= */
+.intro-page{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: url("./instrucoes/images/bg-curvy-desktop.svg") no-repeat;  
+    background-position: bottom;  
+}
+
+.intro{
+    width: 50%;
+}
+
+.illustarion-intro img{
+    width: 500px;
+    object-fit: contain;
+}
+
+.info-intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.info-intro h1{
+    color: var(--White);
+    text-align: center;
+}
+
+.info-intro p{
+    color: var(--White);
+    margin-top: 1.8rem;
+    text-align: center;
+    width: 70%;
+
+}
+.info-intro button{
+    margin-top: 1rem;
+    padding: 1rem 4rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--Blue);
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--White);
+}
+
+/* ===============section-infos=============== */
+.section-infos{
+    width: 100vw;
+    background-color: var(--Dark-Blue-2);
+    position: relative;
+}
+
+.infos{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding: 8rem;
+    gap: 2rem;
+}
+
+.section{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;   
+    justify-content: center;
+    gap: 1rem;
+    width: 400px;
+}
+
+.img-section{
+
+}
+.title-section{
+    color: var(--White);
+    text-align: center;
+}
+.text-section{
+    color: var(--White);
+    text-align: center;
+}
+/* =================== */
+.more{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 5rem;
+}
+
+.more-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.more-info h2{
+    color: var(--White);
+    font-size: 3rem;
+}
+.more-info p {
+    color: var(--White);
+}
+.more-info a {
+    color: var(--Cyan);
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--Cyan);    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: fit-content;
+}
+/* ================== */
+.cards{
+    width: 100%;
+    padding: 4rem;
+    margin-bottom: 12rem;
+}
+.aspas{
+    position: absolute;
+    top: -35px;
+    left: -10px;
+}
+.list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.card{
+    background-color: var(--Dark-Blue-3);
+    padding: 2rem;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    box-shadow: rgba(48, 48, 48, 0.18) 9.4px 2.4px 9.2px;
+    border-radius: 6px;
+}
+.card p{
+    color: var(--White);
+}
+.card span{
+    color: var(--White);
+}
+
+.card span:nth-child(2){
+    opacity: .6;
+}
+.card div:nth-child(1){
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 8px;
+}
+.card div:nth-child(2){
+   display: flex;
+    align-items: center;
+}
+.card div img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.person{
+   display: flex;
+   flex-direction: column;
+}
+
+.person span{
+    align-self: flex-start;
+    margin-left: 10px;
+    font-size: 0.8rem;
+}
+/* ===============form============= */
+.form{
+    border-radius: 10px;
+    width: 70vw;
+    height: 250px;
+    background-color: var(--Dark-Blue-3);
+    position: absolute;
+    bottom: -125px;
+    left: 15vw;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.form h1{
+    color: var(--White);
+}
+.form p{
+    width: 80%;
+    color: var(--White);
+    text-align: center;
+}
+
+
+.form div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.form input{
+    padding: .8rem;
+    width: 500px;
+    border: none;
+    border-radius: 2rem;
+    outline: none;
+}
+.form button{
+    padding: .8rem 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    background-color: var(--Blue);
+    color: var(--White);
+
+}
+
+/* ===========footer============= */
+.footer{
+    color: var(--White);
+    padding: 15rem 5rem;
+    background-color: var(--Dark-Blue-4);
+  
+}
+
+.footer-logo{
+    align-self: flex-start;
+}
+
+.footer-info{
+    display: flex;
+}
+
+.footer-info div{
+    align-self: center;
+    flex: 1;
+}
+
+.footer-info div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.footer-info div:nth-child(1) img{
+    object-fit: cover;
+    width: 20px;
+    height: 20px;
+}
+
+
+.footer-info div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-info div:nth-child(3){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
+    justify-items: flex-end;
+
+    gap: 10px;
+}
+
+.footer-info div:nth-child(3) a{
+   text-decoration: none;
+   color: var(--White);
+}
+
+.footer-info div:nth-child(4){
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-info div:nth-child(4) span{
+    border: 1px solid white;
+    padding: .4rem 1rem;
+    width: 100px;
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+}
